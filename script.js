@@ -34,4 +34,4 @@ let changeText = ()=>{
 };
 
 changeText();
-setInterval(changeText, 300);
+setInterval(changeText, 3000);
