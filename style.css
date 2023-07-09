@@ -15,8 +15,10 @@
     --bg-color: #250821;
     --secon-bg-color: #292e33;
     --big-font: 2.5rem;
-    --norma-font: 2rem;
-    --neon-box-shadow: 0 0 0.5rem #12f7ff;
+    --normal-font: 2rem;
+    --neon-box-shadow: 0
+    
+    .main-text span0 0.5rem #12f7ff;
     --h2-font: 3rem;
     --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
         0 0 20px rgba(18, 247, 255, 0.3),
@@ -327,8 +329,10 @@ a.btn:nth-child(2)::before{
 .about-content h2{
     color: var(--hover-color);
     font-weight: 700;
-    font-size: var(--norma-font);
+    font-size: var(--normal-font);
 }
+
+.main-text span
 
 .about-content h3{
     font-weight: 600;
@@ -385,10 +389,186 @@ a.btn:nth-child(2)::before{
     position: absolute;
 } */
 
+/*------- services section css------------ */
+/* 
+.main-text{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.main-text span{
+    color: #fdfdfd;
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
+
+ */
 
 
 
 
+/* ---------------------skills section css------------- */
+.skills{
+    background: var(--secon-bg-color);
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.main-text{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.main-text span{
+    color: #fdfdfd;
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+    /* position: relative; */
+}
+
+.skill-bar .bar .ps{
+    width: 60%;
+    animation: ps 2s;
+}
+
+.skill-bar .bar .html{
+    width: 75%;
+    animation: html 3s;
+}
+.skill-bar .bar .css{
+    width: 72%;
+    animation: css 3s;
+}
+.skill-bar .bar .javascript{
+    width: 55%;
+    animation: javascript 5s;
+}
+
+.skill-bar .bar .c{
+    width: 90%;
+    animation: c 7s;
+}
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
 
 
 
@@ -412,5 +592,61 @@ a.btn:nth-child(2)::before{
     }
     80%{
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 69%;
+    }
+}
+
+@keyframes ps{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+@keyframes glow{
+    0%{
+        background:  var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background:  var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
     }
 }
