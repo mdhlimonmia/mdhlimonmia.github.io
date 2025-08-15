@@ -308,7 +308,7 @@ section {
 
 .img-box img {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
 }
 
@@ -373,9 +373,10 @@ section {
 
 .info-about1,
 .info-about2,
+.info-about4,
 .info-about3 {
     background: var(--bg-color);
-    font-size: .5rem;
+    font-size: .7rem;
     position: absolute;
     padding: 10px;
     width: 90px;
@@ -390,18 +391,18 @@ section {
 }
 
 .info-about1 {
-    left: 10%;
+    left: -10%;
     top: 34%;
 }
 
 .info-about2 {
-    left: 66%;
+    left: 70%;
     top: 14%;
 }
 
 .info-about3 {
     left: 61%;
-    top: 70%;
+    top: 90%;
 }
 
 .img-about samp {
